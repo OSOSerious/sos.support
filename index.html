@@ -1,53 +1,97 @@
+<link rel="stylesheet" href="styles.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS Support</title>
+    <title>SOS.Support - Online Emergency Support Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to SOS Support</h1>
+        <div class="container">
+            <h1>SOS.Support</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#university">SOS.University</a></li>
+                    <li><a href="#partners">SOS.Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section class="main">
-            <h2>Your One-Stop Support Hub</h2>
-            <p>Get the support you need, when you need it. Our team is here to ensure your experience with our services is smooth and hassle-free.</p>
-            <button onclick="showSupportForm()">Contact Support</button>
-        </section>
-        <section class="form" id="supportForm" style="display:none;">
-            <h2>Contact Support</h2>
-            <form id="supportReqForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="issue">Issue</label>
-                <textarea id="issue" name="issue"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2023 SOS Support</p>
-    </footer>
-    <script>
-        function showSupportForm() {
-            document.getElementById('supportForm').style.display = 'block';
-        }
 
-        document.getElementById('supportReqForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Support request submitted!');
-        });
-    </script>
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to SOS.Support</h2>
+                <p>Your go-to platform for online emergency support, training, and partnership opportunities.</p>
+                <a href="#services" class="cta-button">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Emergency Support</h3>
+                        <p>Get immediate support through calls, texts, emails, or pings. We offer both subscription-based and walk-in pricing options.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Automation</h3>
+                        <p>Our platform automates basic queries and initial troubleshooting, allowing our experts to focus on complex issues.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Upsell and Transfers</h3>
+                        <p>Receive solutions, transfers, or product upsells tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOS.University Section -->
+        <section id="university">
+            <div class="container">
+                <h2>SOS.University</h2>
+                <p>Training programs and hackathons designed to prepare you for handling online emergencies using our platform.</p>
+                <a href="#" class="cta-button">Join a Hackathon</a>
+            </div>
+        </section>
+
+        <!-- SOS.Partners Section -->
+        <section id="partners">
+            <div class="container">
+                <h2>SOS.Partners</h2>
+                <p>Become an affiliate partner, contribute smart solutions, and participate in our projects. Earn rewards for bringing innovative ideas.</p>
+                <a href="#" class="cta-button">Sign Up as a Partner</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have any questions? Reach out to us via email or phone.</p>
+                <ul>
+                    <li>Email: support@sos.support</li>
+                    <li>Phone: 1-800-SOS-HELP</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SOS.Support. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
