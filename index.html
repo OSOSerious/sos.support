@@ -3,51 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS Support</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SOS Support | AI-Powered Business Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to SOS Support</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#automation">Automation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section class="main">
-            <h2>Your One-Stop Support Hub</h2>
-            <p>Get the support you need, when you need it. Our team is here to ensure your experience with our services is smooth and hassle-free.</p>
-            <button onclick="showSupportForm()">Contact Support</button>
-        </section>
-        <section class="form" id="supportForm" style="display:none;">
-            <h2>Contact Support</h2>
-            <form id="supportReqForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="issue">Issue</label>
-                <textarea id="issue" name="issue"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2023 SOS Support</p>
-    </footer>
-    <script>
-        function showSupportForm() {
-            document.getElementById('supportForm').style.display = 'block';
-        }
 
-        document.getElementById('supportReqForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Support request submitted!');
-        });
-    </script>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="overlay">
+            <h1>Welcome to SOS Support</h1>
+            <p>Your Open Source AI-Powered Platform for Scaling Business Operations</p>
+            <a href="#services" class="cta-button">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our AI-Powered Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>SOS Support</h3>
+                <p>Revolutionize customer service with AI automation that handles ticketing, reduces response times, and scales as your business grows.</p>
+            </div>
+            <div class="service">
+                <h3>SOS University</h3>
+                <p>Offer your workforce customizable, engaging learning paths that keep them competitive and compliant in a rapidly evolving marketplace.</p>
+            </div>
+            <div class="service">
+                <h3>SOS Partners</h3>
+                <p>Streamline business collaboration with vendors, resellers, and partners. Manage deals, track integrations, and scale partnerships effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation & Workflows Section -->
+    <section id="automation">
+        <h2>Automation & Workflows</h2>
+        <p>Our platform integrates advanced CI/CD workflows, automating deployment, testing, and security checks. With GitHub Actions and VS Code, we ensure your business operations are streamlined and efficient.</p>
+        <ul>
+            <li>Automated ticket handling via AI</li>
+            <li>Customizable workflows for training and partnerships</li>
+            <li>Continuous integration and delivery pipelines that scale</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to learn more about how SOS Support can help your business? Reach out to us below:</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SOS Support. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
