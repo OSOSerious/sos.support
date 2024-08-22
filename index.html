@@ -3,153 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Static Site</title>
+    <title>SOS SUPPORT</title>
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body styling */
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
         }
-
-        /* Header styling */
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #0044cc;
+            color: white;
             padding: 20px 0;
             text-align: center;
         }
-
         header h1 {
+            margin: 0;
             font-size: 2.5em;
         }
-
-        header p {
-            font-size: 1.1em;
-        }
-
-        /* Navigation bar */
-        nav {
-            background-color: #444;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
+        header .logo {
+            font-size: 1.5em;
             font-weight: bold;
+            color: white;
         }
-
-        nav a:hover {
-            color: #ff9900;
-        }
-
-        /* Main content area */
-        main {
-            max-width: 1100px;
-            margin: 20px auto;
+        section {
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        main h2 {
-            color: #333;
-            margin-bottom: 20px;
+        h2 {
+            color: #0044cc;
+            font-size: 2em;
         }
-
-        main p {
+        p {
             font-size: 1.2em;
-            margin-bottom: 20px;
+            line-height: 1.6;
         }
-
-        .btn {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Footer styling */
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #0044cc;
+            color: white;
             text-align: center;
             padding: 10px 0;
-            position: relative;
+            position: fixed;
+            bottom: 0;
             width: 100%;
-            margin-top: 20px;
         }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            main {
-                padding: 15px;
-            }
-
-            main p {
-                font-size: 1.1em;
-            }
-
-            .btn {
-                padding: 8px 15px;
-            }
+        .contact-info {
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <h1>Basic Static Site</h1>
-        <p>Welcome to a simple, responsive static website</p>
+        <div class="logo">&lt;/ sos &gt;</div>
+        <h1>Welcome to SOS SUPPORT</h1>
+        <p>Your Partner in AI Solutions and E-Waste Removal Services</p>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>SOS SUPPORT is dedicated to empowering businesses and communities through AI-driven solutions, innovative technology, and responsible e-waste removal services. We provide specialized support for Managed Service Providers (MSPs) and help companies integrate AI infrastructures to streamline operations and drive success.</p>
+    </section>
 
-    <!-- Main Content Section -->
-    <main>
-        <h2>About This Site</h2>
-        <p>This is a basic static website template with integrated HTML and CSS in one file. It is simple, responsive, and provides an easy foundation to build upon. You can modify this template to fit your needs by adding more content, links, images, or sections as necessary.</p>
-        <a href="#" class="btn">Learn More</a>
-    </main>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>At SOS SUPPORT, we offer a wide range of services to meet your business needs:</p>
+        <ul>
+            <li>AI-Driven Solutions: We integrate AI agents, multi-agent systems, and large language models to optimize your business processes.</li>
+            <li>E-Waste Removal: We provide safe and eco-friendly e-waste removal services tailored for MSPs and large tech companies.</li>
+            <li>Managed Service Provider (MSP) Support: Comprehensive support for MSPs to help them enhance their service offerings.</li>
+        </ul>
+    </section>
 
-    <!-- Footer Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>"SOS SUPPORT has revolutionized the way we handle AI integrations. Their expertise is unmatched!" - Client A</p>
+        <p>"The e-waste removal services provided by SOS SUPPORT have helped us streamline operations and stay eco-conscious." - Client B</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p class="contact-info">Email: nicholasdelnegro80@gmail.com</p>
+        <p class="contact-info">GitHub: <a href="https://github.com/OSOSerious?tab=repositories" target="_blank">OSOSerious Repositories</a></p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        <p>&copy; 2024 SOS SUPPORT - Empowering Businesses through AI and Sustainability</p>
     </footer>
 
 </body>
