@@ -3,97 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS SUPPORT</title>
+    <title>SOS Support - AI Solutions for Business</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
         header {
-            background-color: #0044cc;
+            background: #0044cc;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
         }
-        header .logo {
-            font-size: 1.5em;
-            font-weight: bold;
+        nav {
+            background: #005599;
             color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
         }
         section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            background: white;
+            margin: 20px 0;
         }
         h2 {
             color: #0044cc;
-            font-size: 2em;
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
+        .btn {
+            display: inline-block;
+            background: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #005599;
         }
         footer {
-            background-color: #0044cc;
+            background: #0044cc;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
-        .contact-info {
-            font-size: 1.2em;
+        #contact form {
+            display: grid;
+            gap: 10px;
+        }
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+        }
+        .service-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo">&lt;/ sos &gt;</div>
-        <h1>Welcome to SOS SUPPORT</h1>
-        <p>Your Partner in AI Solutions and E-Waste Removal Services</p>
+        <div class="container">
+            <h1>SOS Support</h1>
+            <p>AI-Driven Solutions for Modern Businesses</p>
+        </div>
     </header>
 
-    <section id="about-us">
-        <h2>About Us</h2>
-        <p>SOS SUPPORT is dedicated to empowering businesses and communities through AI-driven solutions, innovative technology, and responsible e-waste removal services. We provide specialized support for Managed Service Providers (MSPs) and help companies integrate AI infrastructures to streamline operations and drive success.</p>
-    </section>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>At SOS SUPPORT, we offer a wide range of services to meet your business needs:</p>
-        <ul>
-            <li>AI-Driven Solutions: We integrate AI agents, multi-agent systems, and large language models to optimize your business processes.</li>
-            <li>E-Waste Removal: We provide safe and eco-friendly e-waste removal services tailored for MSPs and large tech companies.</li>
-            <li>Managed Service Provider (MSP) Support: Comprehensive support for MSPs to help them enhance their service offerings.</li>
-        </ul>
-    </section>
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to SOS Support</h2>
+            <p>We provide cutting-edge AI solutions to streamline your business operations, enhance customer support, and drive growth. Our open-source platform is designed to tackle the biggest challenges faced by modern businesses.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </section>
 
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p>"SOS SUPPORT has revolutionized the way we handle AI integrations. Their expertise is unmatched!" - Client A</p>
-        <p>"The e-waste removal services provided by SOS SUPPORT have helped us streamline operations and stay eco-conscious." - Client B</p>
-    </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <h3>AI-Powered Customer Support</h3>
+                <p>Automate and scale your customer support with our AI-driven solution. Reduce response times, handle more tickets, and improve customer satisfaction.</p>
+                <a href="https://www.sos.support" target="_blank" class="btn">Learn More</a>
+            </div>
+            <div class="service-box">
+                <h3>Dynamic Workforce Training</h3>
+                <p>Keep your team up-to-date with our customizable learning platform. Offer engaging, personalized training experiences that drive real results.</p>
+                <a href="https://www.sos.university" target="_blank" class="btn">Explore Platform</a>
+            </div>
+            <div class="service-box">
+                <h3>Efficient Partnership Management</h3>
+                <p>Simplify collaboration with vendors, resellers, and partners. Our platform streamlines communication and drives better deal management.</p>
+                <a href="https://www.sos.partners" target="_blank" class="btn">Discover More</a>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p class="contact-info">Email: nicholasdelnegro80@gmail.com</p>
-        <p class="contact-info">GitHub: <a href="https://github.com/OSOSerious?tab=repositories" target="_blank">OSOSerious Repositories</a></p>
-    </section>
+        <section id="about">
+            <h2>About SOS Support</h2>
+            <p>SOS Support is dedicated to empowering businesses through innovative, open-source AI solutions. Our platform is designed to be:</p>
+            <ul>
+                <li><strong>Cost-Effective:</strong> Use and customize our platform without massive upfront costs.</li>
+                <li><strong>Community-Driven:</strong> Benefit from global developer contributions and constant improvements.</li>
+                <li><strong>Adaptable:</strong> Tailor the platform to your unique business needs.</li>
+            </ul>
+            <p>Whether you're a small startup, a growing mid-size company, or a large enterprise, SOS Support has the tools to help you overcome your business challenges and drive success.</p>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <button class="accordion">What makes SOS Support different from other AI solutions?</button>
+            <div class="panel">
+                <p>SOS Support stands out with its open-source approach, allowing for greater customization, community-driven innovation, and cost-effectiveness. Our platform integrates support, training, and partnership management in one unified solution.</p>
+            </div>
+
+            <button class="accordion">Is SOS Support suitable for small businesses?</button>
+            <div class="panel">
+                <p>Absolutely! Our platform is designed to scale with your business. Whether you're a small startup or a large enterprise, SOS Support can be tailored to meet your specific needs and grow with you.</p>
+            </div>
+
+            <button class="accordion">How can I contribute to the SOS Support open-source project?</button>
+            <div class="panel">
+                <p>We welcome contributions from developers around the world. You can contribute by submitting bug reports, suggesting new features, or even contributing code. Visit our GitHub repository for more information on how to get involved.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 SOS SUPPORT - Empowering Businesses through AI and Sustainability</p>
+        <div class="container">
+            <p>&copy; 2024 SOS Support - Empowering Businesses through Open-Source AI</p>
+        </div>
     </footer>
 
+    <script>
+        // Accordion functionality
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
