@@ -1,140 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS Support</title>
+    <title>Basic Static Site</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            box-sizing: border-box;
         }
 
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
         header {
-            background-color: #002b80;
+            background-color: #333;
             color: #fff;
-            padding: 30px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+        }
+
+        /* Navigation bar */
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0044cc;
-            padding: 15px;
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
         }
 
         nav a {
             color: #fff;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #ffcc00;
+            color: #ff9900;
         }
 
+        /* Main content area */
         main {
-            flex: 1;
-            padding: 40px 20px;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
             margin: 20px auto;
-            max-width: 1000px;
-            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        h2 {
-            color: #002b80;
-            font-size: 2.5em;
+        main h2 {
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        p {
+        main p {
             font-size: 1.2em;
-            line-height: 1.6;
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
 
         .btn {
-            background-color: #0044cc;
-            color: white;
-            padding: 15px 30px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
             text-decoration: none;
-            font-size: 1.1em;
-            border-radius: 50px;
+            border-radius: 5px;
             display: inline-block;
             margin-top: 20px;
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #003399;
-            transform: translateY(-3px);
+            background-color: #0056b3;
         }
 
+        /* Footer styling */
         footer {
-            background-color: #002b80;
+            background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
-            margin-top: auto;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
         }
 
         footer p {
             margin: 0;
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
-            main {
-                padding: 20px;
-            }
-
-            h2 {
+            header h1 {
                 font-size: 2em;
             }
 
+            main {
+                padding: 15px;
+            }
+
+            main p {
+                font-size: 1.1em;
+            }
+
             .btn {
-                padding: 12px 25px;
-                font-size: 1em;
+                padding: 8px 15px;
             }
         }
     </style>
 </head>
-
 <body>
 
+    <!-- Header Section -->
     <header>
-        <h1>SOS Support</h1>
-        <p>Empowering Students &amp; Communities Through Technology</p>
+        <h1>Basic Static Site</h1>
+        <p>Welcome to a simple, responsive static website</p>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <a href="#">Home</a>
-        <a href="#">About Us</a>
+        <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
     </nav>
 
+    <!-- Main Content Section -->
     <main>
-        <h2>About SOS Support</h2>
-        <p>At SOS Support, we provide innovative AI-driven solutions and essential technology to schools and communities, empowering students to succeed in their educational journeys.</p>
+        <h2>About This Site</h2>
+        <p>This is a basic static website template with integrated HTML and CSS in one file. It is simple, responsive, and provides an easy foundation to build upon. You can modify this template to fit your needs by adding more content, links, images, or sections as necessary.</p>
         <a href="#" class="btn">Learn More</a>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 SOS Support. All rights reserved.</p>
+        <p>&copy; 2024 Your Website. All Rights Reserved.</p>
     </footer>
 
 </body>
-
 </html>
